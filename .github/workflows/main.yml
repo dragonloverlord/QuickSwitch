@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  release:
+    types: [created]
+  workflow_dispatch: # Put here!!
 
 jobs:
   build:
